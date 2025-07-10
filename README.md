@@ -1,66 +1,101 @@
-  # BOS Prototype Demo
+# BOS Prototype Demo
 
-  A React TypeScript application demonstrating the Business Observability System (BOS)
-  methodology - a stakeholder-first approach to business observability and incident response.     
+A React TypeScript application demonstrating the Business Observability System (BOS) methodology - a stakeholder-first approach to business observability and incident response.
 
-  ## Overview
+## Quick Start for Corporate Testing
 
-  This prototype implements a comprehensive methodology for mapping business processes to
-  observable technical components, enabling organizations to:
+### Prerequisites
+- Node.js installed (check with `node --version`)
+- VS Code or similar editor
 
-  - Map stakeholder dependencies and expectations
-  - Analyze business impact categories (Financial, Legal, Operational, Customer Experience)       
-  - Define telemetry requirements and observable signals
-  - Generate Business Impact Playbooks for incident response
+### Getting the Code
 
-  ## Features
+#### Option A: Git Clone (Recommended if you have Git)
+```bash
+git clone [INTERNAL_REPO_URL]
+cd bos-prototype-demo
+```
 
-  - **Flow Management**: Create and manage business process flows
-  - **7-Step BOS Methodology**: Guided workflow for stakeholder analysis
-  - **Impact Assessment**: Categorize and quantify business impacts
-  - **Telemetry Mapping**: Connect business outcomes to technical signals
-  - **Playbook Generation**: Automated Business Impact Playbook creation
-  - **Data Persistence**: Local storage with import/export capabilities
+#### Option B: GitHub Desktop (If Installed)
+1. Open GitHub Desktop
+2. File → Clone Repository → URL tab
+3. Paste the internal repository URL
+4. Choose local path and clone
+5. Open in VS Code
 
-  ## Quick Start
+#### Option C: Download ZIP
+1. Click green "Code" button → "Download ZIP"
+2. Extract to folder
+3. **Important**: Navigate into the extracted subfolder (usually ends with "-main")
+4. Open that folder in VS Code
 
-  ```bash
-  # Install dependencies
-  npm install
+### Running the Application
 
-  # Start development server
-  npm run dev
+1. **Open terminal** in VS Code (`Ctrl + backtick`)
+2. **Install dependencies:**
+   ```bash
+   npm install
+   ```
+   *(Takes 2-3 minutes, installs ~400 packages)*
 
-  # Open browser to http://localhost:3000
+3. **Start the application:**
+   ```bash
+   npm run dev
+   ```
+   *(Browser opens automatically to http://localhost:3000)*
 
-  Build for Production
+### Testing Guidelines
 
-  # Create production build
-  npm run build
+#### What to Test
+- **Flow Creation**: Create new business process flows
+- **7-Step Methodology**: Complete stakeholder analysis workflow
+- **Impact Assessment**: Define Financial/Legal/Operational/Customer impacts
+- **Playbook Generation**: Generate Business Impact Playbooks
+- **Data Persistence**: Test import/export functionality
 
-  # Preview production build
-  npm run preview
+#### Sample Business Process
+Try creating a flow for a familiar business process like:
+- Customer onboarding
+- Loan approval workflow  
+- Trading settlement process
+- Incident response procedure
 
-  Architecture
+### Troubleshooting
 
-  - React 18 + TypeScript + Vite
-  - Custom hooks-based state management
-  - Inline styling with corporate design system
-  - Local storage persistence
-  - Comprehensive testing with Vitest
+**Common Issues:**
+- **"npm not found"**: Node.js not installed or not in PATH
+- **White screen**: Make sure you're in the correct folder with `package.json`
+- **Port conflicts**: If 3000 is busy, app will use next available port
+- **npm install fails**: Check corporate proxy/firewall settings
+- **Permission errors**: Try running VS Code as administrator
+- **Wrong folder**: Make sure you're in the folder containing `package.json`, not a parent folder
 
-  BOS Methodology
+**Corporate Network Issues:**
+- npm install may be slower due to corporate firewalls
+- Some packages may require proxy configuration
+- Contact IT if persistent network issues
 
-  The prototype implements a 7-step methodology:
+**Need Help?**
+Contact [YOUR_NAME] or [YOUR_EMAIL] for technical support.
 
-  1. WHO depends - Stakeholder identification
-  2. WHAT they expect - Dependency mapping
-  3. WHAT breaks - Impact analysis
-  4. WHAT telemetry - Data source identification
-  5. WHAT signals - Observable unit definition
-  6. PLAYBOOK generation - Incident response documentation
-  7. DASHBOARD requirements - Monitoring specifications
+## About the BOS Methodology
 
-  License
+This prototype implements a 7-step methodology for connecting business processes to technical observability:
 
-  MIT License - See LICENSE file for details
+1. **WHO depends** - Identify stakeholders and their roles
+2. **WHAT they expect** - Map dependencies and expectations
+3. **WHAT breaks** - Analyze business impact categories
+4. **WHAT telemetry** - Identify data sources and systems
+5. **WHAT signals** - Define observable metrics and alerts
+6. **PLAYBOOK generation** - Create incident response documentation
+7. **DASHBOARD requirements** - Specify monitoring needs
+
+## Feedback
+
+Please provide feedback on:
+- User experience and interface usability
+- Business process relevance and accuracy
+- Missing features or capabilities
+- Technical performance and reliability
+
+Create issues in this repository or contact [YOUR_NAME] directly.
