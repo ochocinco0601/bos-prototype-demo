@@ -1,0 +1,85 @@
+{
+  "version": "1.0.0",
+  "lastUpdated": "2025-07-08",
+  "description": "Configuration for BOS Data Structure Translation System prompt",
+  "modules": {
+    "MODULE_0_FOUNDATION": {
+      "file": "modules/module-0-foundation.md",
+      "title": "BOS Foundation Context",
+      "required": true,
+      "description": "Core BOS methodology and principles"
+    },
+    "MODULE_1_DATA_MODEL": {
+      "file": "modules/module-1-data-model.md",
+      "title": "Complete BOS Data Model Context",
+      "required": true,
+      "description": "TypeScript interfaces and data structure rules"
+    },
+    "MODULE_2_DOMAIN": {
+      "file": "modules/module-2-domain.md",
+      "title": "Domain Context and Recognition",
+      "required": true,
+      "description": "Consumer banking and lending domain patterns"
+    },
+    "MODULE_3_EXTRACTION": {
+      "file": "modules/module-3-extraction.md",
+      "title": "Translation Extraction Rules",
+      "required": true,
+      "description": "Rules for what to extract vs. what not to infer"
+    },
+    "MODULE_4_OUTPUT": {
+      "file": "modules/module-4-output.md",
+      "title": "Output Format Specifications",
+      "required": true,
+      "description": "ASCII tree format and JSON structure specifications"
+    },
+    "MODULE_5_QUESTIONS": {
+      "file": "modules/module-5-questions.md",
+      "title": "Interactive Question Framework",
+      "required": true,
+      "description": "Question sequencing and multi-question protocols"
+    },
+    "MODULE_6_ERRORS": {
+      "file": "modules/module-6-errors.md",
+      "title": "Error Handling and Validation",
+      "required": true,
+      "description": "Common edge cases and validation strategies"
+    },
+    "MODULE_7_INTEGRATION": {
+      "file": "modules/module-7-integration.md",
+      "title": "Integration Guidance",
+      "required": true,
+      "description": "How output feeds into BOS workflow"
+    },
+    "MODULE_8_REFINEMENT": {
+      "file": "modules/module-8-refinement.md",
+      "title": "Interactive Refinement Protocol",
+      "required": true,
+      "description": "User-initiated changes and BOS domain constraints"
+    },
+    "MODULE_9_FINAL": {
+      "file": "modules/module-9-final.md",
+      "title": "Final Output Protocol",
+      "required": true,
+      "description": "Human-readable summary and validation questions"
+    }
+  },
+  "settings": {
+    "domainSpecific": {
+      "financialServices": true,
+      "consumerBanking": true,
+      "mortgageOrigination": true
+    },
+    "outputFormats": {
+      "asciiTree": true,
+      "jsonExport": true,
+      "summaryStats": true
+    },
+    "uxOptimizations": {
+      "hierarchySpacing": true,
+      "countSummaries": true,
+      "consistentFormatting": true,
+      "bosTeaching": true
+    }
+  }
+}
